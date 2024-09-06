@@ -747,7 +747,7 @@ pd.read_sql(query,conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1332,7 +1332,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1646,7 +1646,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1708,7 +1708,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2173,7 +2173,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2373,7 +2373,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2795,7 +2795,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2875,7 +2875,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -2989,7 +2989,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3109,7 +3109,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3171,7 +3171,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3253,7 +3253,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3420,7 +3420,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3502,7 +3502,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -3559,7 +3559,7 @@ pd.read_sql(query, conn)
      
 
      
-</style>
+ 
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
