@@ -127,24 +127,16 @@ O projeto também pode ser facilmente implantado usando Docker.
    cd CRM-Skynet-Provider-SQLite_FastAPI
    ```
 
-3. **Construa a imagem Docker:**
+3. **Execute o Docker Compose:**
 
    ```bash
-   docker build -t skynet-crm .
+   docker-compose up -d
    ```
 
-4. **Execute o contêiner:**
+4. **Acesse a API:**
 
-   ```bash
-   docker run -p 8000:8000 -v $(pwd)/db:/app/db skynet-crm
-   ```
-   **Observação:** O comando `-v $(pwd)/db:/app/db` mapeia o diretório `db` local para o diretório `/app/db` dentro do contêiner, garantindo que os dados do banco de dados sejam persistidos.
-
-5. **Acesse a API:**
-
-   A API estará disponível em `http://localhost:8000` e a documentação interativa em `http://localhost:8000/docs`.
-
-
+   A API estará disponível em `http://localhost:8000` e a documentação interativa em `http://localhost:8000/docs`.er 
+      
 ## Tecnologias Utilizadas
 
 - **Python:** Linguagem de programação principal.
@@ -153,10 +145,13 @@ O projeto também pode ser facilmente implantado usando Docker.
 - **Pydantic:** Biblioteca para validação de dados e modelagem de objetos.
 - **Poetry:** Gerenciador de dependências e ambiente virtual.
 - **Docker:** Plataforma para conteinerização de aplicações.
+- **Docker Compose:** Orquestração da imagem.
 
 ## Contribuições
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+
+Caso tenha interesse em saber todo o passo à passo do desenvolvimento você pode acessar aqui: [PoC_skynet](https://github.com/Jcnok/CRM-Skynet-Provider-SQLite_FastAPI/blob/master/skynet.md#projeto-banco-de-dados-sqlite---crm-skynet-provider-com-fastapi)
 
 ## Licença
 
