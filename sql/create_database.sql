@@ -1,14 +1,3 @@
-"""script para criar o banco de dados."""
-import sqlite3
-
-# Passo 1: Criar conexão com o banco de dados
-conn = sqlite3.connect(
-    './db/Skynet.db'
-)  # Nome do arquivo do banco de dados SQLite
-cursor = conn.cursor()
-
-# Passo 2: Ler o script SQL do arquivo
-script_sql = """
 -- Tabela `Clientes`
 DROP TABLE IF EXISTS Clientes;
 
@@ -115,19 +104,3 @@ CREATE TABLE IF NOT EXISTS Pagamentos (
   forma_pagamento TEXT CHECK(forma_pagamento IN ('Boleto', 'Crédito', 'PIX', 'Outros')) NOT NULL,
   FOREIGN KEY (fatura_id) REFERENCES Faturas (fatura_id)
 );
-"""
-
-# Passo 3: Executar o script SQL
-cursor.executescript(script_sql)
-conn.commit()
-
-# Passo 4: Verificar as tabelas criadas
-cursor.execute("SELECT name FROM sqlite_master WHERE type='table';")
-tables = cursor.fetchall()
-
-print('Tabelas criadas:')
-for table in tables:
-    print(table[0])
-
-# Fechar a conexão com o banco de dados
-conn.close()
