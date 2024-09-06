@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "crm-skynet-provider-sqlite-fastapi"
+version = "0.1.0"
+description = "\"Sistema CRM para a Skynet Provider usando SQLite e FastAPI\""
+authors = ["Julio Okuda <julio.okuda@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter = "^1.1.1"
+lab = "^8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
