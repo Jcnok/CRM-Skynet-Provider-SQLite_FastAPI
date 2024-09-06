@@ -130,4 +130,4 @@ for table in tables:
     print(table[0])
 
 # Fechar a conexão com o banco de dados
-conn.close()
+conn.close
