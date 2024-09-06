@@ -1,10 +1,8 @@
-"""Criar a view ClienteInfo com as informações básicas dos clientes."""
+'''Criar a view ClienteInfo com as informações básicas dos clientes.'''
 import sqlite3
 
 # Passo 1: Conectar ao banco de dados
-conn = sqlite3.connect(
-    './db/Skynet.db'
-)  # Conecta ao banco de dados SQLite existente ou cria um novo
+conn = sqlite3.connect('./db/Skynet.db')  # Conecta ao banco de dados SQLite existente ou cria um novo
 cursor = conn.cursor()
 
 # Passo 2: Criar a view 'ClienteInfo'
@@ -30,7 +28,7 @@ conn.commit()
 cursor.execute("SELECT name FROM sqlite_master WHERE type='view';")
 views = cursor.fetchall()
 
-print('Views criadas:')
+print("Views criadas:")
 for view in views:
     print(view[0])
 

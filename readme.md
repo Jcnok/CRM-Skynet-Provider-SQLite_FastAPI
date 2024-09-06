@@ -1,10 +1,11 @@
 # CRM Skynet Provider - SQLite & FastAPI
 
-[![Python](https://img.shields.io/badge/Python-3.7+-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.63+-green.svg)](https://fastapi.tiangolo.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-3.35+-orange.svg)](https://www.sqlite.org/)
-[![Poetry](https://img.shields.io/badge/Poetry-1.1.13+-gold.svg)](https://python-poetry.org/)
-[![Docker](https://img.shields.io/badge/Docker-20.10+-blue.svg)](https://www.docker.com/)
+[![Python](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.113.0+-green.svg)](https://fastapi.tiangolo.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-3.37.2+-orange.svg)](https://www.sqlite.org/)
+[![Poetry](https://img.shields.io/badge/Poetry-1.7.1+-gold.svg)](https://python-poetry.org/)
+[![Docker](https://img.shields.io/badge/Docker-25.0.3+-blue.svg)](https://www.docker.com/)
+[![Docker-Compose](https://img.shields.io/badge/Docker_compose-2.24.6+-blue.svg)](https://docs.docker.com/compose/install/linux/)
 
 ## Descrição
 
@@ -21,14 +22,24 @@ Este projeto implementa um sistema de gerenciamento de clientes (CRM) para a Sky
 ```
 CRM-Skynet-Provider-SQLite/FastAPI
 ├── notebooks
+│   └── skynet.ipyng
 ├── img
+│   └── skynet_api.png
 │   └── skynetprovider.png
-├── bd
+├── db
 │   └── skynet.db
 ├── sql
-│   └── skynet_v1.sql
+│   └── create_database.sql
+│   └── create_views.sql
+│   └── queries.sql
 ├── src
 │   └── main.py
+│   └── utils
+│       └── criar_bd.py
+│       └── gerar_dados.py
+│       └── load_data.py
+│       └── view_client_info.py
+│       └── remove_zone_identifier.sh
 └── data
     ├── clientes.csv
     ├── planos.csv
@@ -48,6 +59,7 @@ CRM-Skynet-Provider-SQLite/FastAPI
 - **bd:** Contém o banco de dados SQLite `skynet.db`.
 - **sql:** Armazena scripts SQL para criação e gerenciamento do banco de dados.
 - **src:** Contém o código-fonte da API FastAPI, incluindo o arquivo principal `main.py`.
+   - **utils:** Contém todos os scripts necessários para criar o banco de dados.
 - **data:** Contém arquivos CSV com dados de exemplo para popular o banco de dados.
 
 ## Recursos da API
@@ -67,13 +79,13 @@ A API RESTful oferece endpoints para realizar operações CRUD em todos os módu
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/CRM-Skynet-Provider-SQLite-FastAPI.git
+   git clone https://github.com/Jcnok/CRM-Skynet-Provider-SQLite_FastAPI.git
    ```
 
 2. **Navegue até o diretório do projeto:**
 
    ```bash
-   cd CRM-Skynet-Provider-SQLite-FastAPI
+   cd CRM-Skynet-Provider-SQLite_FastAPI
    ```
 
 3. **Instale as dependências com Poetry:**
@@ -85,7 +97,7 @@ A API RESTful oferece endpoints para realizar operações CRUD em todos os módu
 4. **Execute a API com Poetry:**
 
    ```bash
-   poetry run uvicorn src.main:app --reload
+   poetry run uvicorn src.app:app --reload
    ```
 
 5. **Acesse a API:**
@@ -106,13 +118,13 @@ O projeto também pode ser facilmente implantado usando Docker.
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/CRM-Skynet-Provider-SQLite-FastAPI.git
+   git clone https://github.com/Jcnok/CRM-Skynet-Provider-SQLite_FastAPI.git
    ```
 
 2. **Navegue até o diretório do projeto:**
 
    ```bash
-   cd CRM-Skynet-Provider-SQLite-FastAPI
+   cd CRM-Skynet-Provider-SQLite_FastAPI
    ```
 
 3. **Construa a imagem Docker:**
@@ -124,9 +136,9 @@ O projeto também pode ser facilmente implantado usando Docker.
 4. **Execute o contêiner:**
 
    ```bash
-   docker run -p 8000:8000 -v $(pwd)/bd:/app/bd skynet-crm
+   docker run -p 8000:8000 -v $(pwd)/db:/app/db skynet-crm
    ```
-   **Observação:** O comando `-v $(pwd)/bd:/app/bd` mapeia o diretório `bd` local para o diretório `/app/bd` dentro do contêiner, garantindo que os dados do banco de dados sejam persistidos.
+   **Observação:** O comando `-v $(pwd)/db:/app/db` mapeia o diretório `db` local para o diretório `/app/db` dentro do contêiner, garantindo que os dados do banco de dados sejam persistidos.
 
 5. **Acesse a API:**
 

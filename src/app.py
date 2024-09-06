@@ -12,7 +12,7 @@ from pydantic import BaseModel
 app = FastAPI(title='Skynet CRM API')
 
 # Configuração do banco de dados
-DATABASE = './db/skynet.db'
+DATABASE = './db/Skynet.db'
 
 
 @contextmanager
@@ -174,7 +174,7 @@ def read_clientes():
     """Retorna a lista de todos os clientes."""
     with get_db() as conn:
         cursor = conn.cursor()
-        clientes = cursor.execute('SELECT * FROM Clientes').fetchall()
+        clientes = cursor.execute('SELECT * FROM Clientes;').fetchall()
     return [dict(cliente) for cliente in clientes]
 
 
