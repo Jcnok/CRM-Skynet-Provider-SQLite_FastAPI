@@ -742,10 +742,7 @@ pd.read_sql(query,conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -1334,10 +1331,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -1655,10 +1649,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -1724,10 +1715,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -2196,10 +2184,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -2403,10 +2388,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -2832,10 +2814,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -2919,10 +2898,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -3040,10 +3016,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -3167,10 +3140,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -3236,10 +3206,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -3325,10 +3292,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -3499,10 +3463,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -3588,10 +3549,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
@@ -3652,10 +3610,7 @@ pd.read_sql(query, conn)
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+ 
 
     .dataframe tbody tr th {
         vertical-align: top;
