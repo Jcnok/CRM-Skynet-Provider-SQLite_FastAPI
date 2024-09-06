@@ -102,7 +102,7 @@ A API RESTful oferece endpoints para realizar operações CRUD em todos os módu
 
 5. **Acesse a API:**
 
-   A API estará disponível em `http://localhost:8000` e a documentação interativa em `http://localhost:8000/docs`.
+   A API estará disponível em `http://localhost:8000` e a documentação interativa em http://localhost:8000/docs.
 
 ### Implantação com Docker
 
@@ -135,7 +135,7 @@ O projeto também pode ser facilmente implantado usando Docker.
 
 4. **Acesse a API:**
 
-   A API estará disponível em `http://localhost:8000` e a documentação interativa em `http://localhost:8000/docs`.er 
+   A API estará disponível em `http://localhost:8000` e a documentação interativa em http://localhost:8000/docs. 
       
 ## Tecnologias Utilizadas
 
