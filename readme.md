@@ -17,6 +17,8 @@ Este projeto implementa um sistema de gerenciamento de clientes (CRM) para a Sky
 - **Chamados de Suporte:** Abertura, acompanhamento, resolução e histórico de chamados.
 - **Faturas e Pagamentos:** Emissão, acompanhamento de pagamentos e histórico financeiro.
 
+## Teste a API OnLine: [CRM-FASTAPI](https://jcnok-skynet.hf.space/docs#/)
+
 ## Estrutura do Projeto
 
 ```
